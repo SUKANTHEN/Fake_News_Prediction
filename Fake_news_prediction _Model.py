@@ -12,7 +12,7 @@ from sklearn.linear_model import PassiveAggressiveClassifier
 from sklearn.meetrics import accuracy_score, confusion_matrix
 
 # Read the data
-df=pd.read_csv("............")
+df=pd.read_csv("............")  # enter your file locatory path 
 
 # Exploratory Data Analysis
 df.shape
@@ -23,7 +23,7 @@ df.tail()
 labels=df.label
 labels.head()
 
-# Apply ML
+# Apply ML algorithm 
 x_train,x_test,y_train,y_test=train_test_split(df['text'], labels, test_size=0.2, random_state=7)
 
 tfidf_vectorizer=TfidfVectorizer(stop_words='english', max_df=0.7)
